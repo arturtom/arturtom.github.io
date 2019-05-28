@@ -1,7 +1,36 @@
+/********************overall***********************/
+
+body {
+    background: #f3f2f2;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+table {
+    width: 100%;
+}
+
+
+/********************overall***********************/
+
+
 /********************header***********************/
 
-header {
+#header {
     display: flex;
+    background: #00aa77;
+    background-image: url("/images/ZenBG-1.png"), url("/images/ZenBG-2.png");
+    background-repeat: repeat-x, repeat;
 }
 
 .header_image {
@@ -10,6 +39,7 @@ header {
 }
 
 #header_quote {
+    color: white;
     text-align: center;
     width: 400px;
     margin: 20px auto 20px;
@@ -22,12 +52,15 @@ header {
 
 /********************nav***********************/
 
-ul {
+ul#navigation-list {
+    font-size: 1.2em;
     display: flex;
     text-align: center;
+    align-items: center;
 }
 
-li {
+ul#navigation-list li {
+    padding-top: 10px;
     width: 100%;
     display: inline;
 }
@@ -38,9 +71,41 @@ li {
 
 /********************main***********************/
 
+.main_part_index {
+    line-height: 200%;
+    font-size: 1.2em;
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
 .main_part {
+    line-height: 200%;
+    font-size: 1.2em;
     margin: 50px auto;
-    width: 1000px;
+    max-width: 1000px;
+    display: flex;
+}
+
+#epilobium-article-img {
+    width: 200px;
+    height: 400px;
+}
+
+#epilobium-article {
+    padding-left: 10px;
+}
+
+ul#goodness-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    list-style-type: square;
+}
+
+ul#goodness-list li {
+    width: 100%;
+    display: inline;
 }
 
 
@@ -51,14 +116,36 @@ li {
 
 footer {
     position: absolute;
+    height: 50px;
     width: 100%;
     bottom: 0;
-}
-
-footer article.footer {
-    width: 400px;
-    margin: 20px auto;
+    right: 0;
+    left: 0;
+    background: #00aa77;
+    background-image: url("/images/ZenBG-1.png"), url("/images/ZenBG-2.png");
+    background-repeat: repeat-x, repeat;
 }
 
 
 /********************footer***********************/
+
+div.quote-slide-left {
+    width: 100%;
+    overflow: hidden;
+}
+
+div.quote-slide-left p {
+    color: #f3f2f2;
+    animation: slide-left 60s linear infinite running;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: -70%;
+        width: 100%;
+    }
+}
