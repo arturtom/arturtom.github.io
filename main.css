@@ -5,11 +5,16 @@ html {
 }
 
 body {
-    background: #f3f2f2;
     min-height: 100%;
     min-width: 100%;
     position: flex;
     margin: 0;
+    background-image: url("/images/istockphoto-845969562-2048x2048.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
 }
 
 a {
@@ -80,7 +85,7 @@ nav {
     position: fixed;
     z-index: 5;
     width: 100%;
-    background: rgb(154, 156, 150, .8);
+    background: rgb(154, 156, 150, .6);
 }
 
 
@@ -108,14 +113,10 @@ nav {
     justify-content: space-between;
 }
 
-#epilobium>img {
-    width: 40%;
-    height: 100vh;
-}
-
 #epilobium>article {
     height: 100vh;
-    width: 60%;
+    width: 90%;
+    padding-right: 2rem;
 }
 
 ul#goodness-list {
@@ -137,9 +138,11 @@ ul#goodness-list li {
 }
 
 #index_article {
+    text-align: center;
     color: #f3f2f2;
     position: absolute;
-    top: 60%;
+    width: 80%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -147,10 +150,6 @@ ul#goodness-list li {
 #cupOfTea {
     width: 50%;
     height: 600px;
-}
-
-#epilubiumImg {
-    width: 100%;
 }
 
 #preparation {
@@ -169,7 +168,7 @@ ul#goodness-list li {
     top: 45%;
     left: 75%;
     transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .8);
+    background: rgb(154, 156, 150, .4);
     width: 40%;
 }
 
@@ -204,14 +203,84 @@ ul#goodness-list li {
 }
 
 #tea {
-    padding: 5% 5%;
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
 #tea>img {
+    height: 100%;
+    width: 100%;
+}
+
+#tea>article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(154, 156, 150, .2);
+}
+
+div.ingredientsSection {
+    position: relative;
+}
+
+article.ingredientsSection {
+    color: white;
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(154, 156, 150, .4);
+}
+
+#goodness {
+    position: relative;
     height: 100vh;
+}
+
+#goodness>img {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    position: fixed;
+}
+
+#goodness>article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#quality {
+    padding: 5%;
+    height: 100vh;
+}
+
+#contact {
+    height: 100vh;
+    position: relative;
+}
+
+#contact>img {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+
+#contact>article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
