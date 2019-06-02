@@ -8,6 +8,7 @@ body {
     min-height: 100%;
     min-width: 100%;
     margin: 0;
+    font-family: sans-serif;
 }
 
 body::after {
@@ -121,8 +122,7 @@ nav {
 
 #epilobium>article {
     height: 100vh;
-    width: 90%;
-    padding-right: 2rem;
+    width: 100%;
 }
 
 ul#goodness-list {
@@ -221,9 +221,11 @@ ul#goodness-list li {
 }
 
 #tea>article {
+    color: white;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
+    width: 40%;
     transform: translate(-50%, -50%);
     background: rgb(154, 156, 150, .2);
 }
@@ -236,7 +238,7 @@ article.ingredientsSection {
     color: white;
     position: absolute;
     width: 80%;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(154, 156, 150, .4);
@@ -264,6 +266,11 @@ article.ingredientsSection {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#goodness>article>article {
+    position: relative;
+    top: -70px;
 }
 
 #quality {
