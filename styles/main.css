@@ -9,6 +9,7 @@ body {
     min-width: 100%;
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 body::after {
@@ -37,7 +38,7 @@ table {
 }
 
 article {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
 }
 
@@ -74,7 +75,7 @@ article {
 /********************nav***********************/
 
 ul#navigation-list {
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: flex;
     text-align: center;
     align-items: center;
@@ -91,6 +92,15 @@ nav {
     z-index: 5;
     width: 100%;
     background: rgb(154, 156, 150, .6);
+}
+
+nav a {
+    position: relative;
+}
+
+#nav_welcome {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 
@@ -138,6 +148,24 @@ ul#goodness-list {
 ul#goodness-list li {
     width: 100%;
     display: inline;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul#goodness-list li::before {
+    content: '';
+    left: -15px;
+    top: 8px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#welcome {
+    position: relative;
+    height: 100vh;
 }
 
 #viewOfEpilobium {
@@ -154,6 +182,7 @@ ul#goodness-list li {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 3rem;
+    font-size: 1.4rem;
 }
 
 #cupOfTea {
@@ -325,22 +354,12 @@ footer {
 /********************footer***********************/
 
 div.quote-slide-left {
+    position: absolute;
     width: 100%;
     overflow: hidden;
+    bottom: 0;
 }
 
 div.quote-slide-left p {
-    color: #f3f2f2;
-    animation: slide-left 60s linear infinite running;
-}
-
-@keyframes slide-left {
-    from {
-        margin-left: 100%;
-        width: 100%;
-    }
-    to {
-        margin-left: -70%;
-        width: 100%;
-    }
+    color: black;
 }

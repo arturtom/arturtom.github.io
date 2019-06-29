@@ -1,0 +1,97 @@
+@keyframes article {
+    0% {
+        top: 40%;
+        left: 10%;
+        transform: scale(0);
+    }
+    50% {
+        top: 40%;
+        left: 10%;
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1), translate(-50%, -50%);
+    }
+}
+
+#index_article {
+    animation-name: article;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes goodness-list {
+    from {
+        left: 110%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+ul#goodness-list li {
+    animation-name: goodness-list;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+$goodness-list-li-number: 11;
+@for $i from 1 through $goodness-list-li-number {
+    ul#goodness-list li:nth-child(#{$i}) {
+        animation-delay: 4s * $i;
+    }
+}
+
+$epilobium-p-number: 5;
+@for $i from 1 through $epilobium-p-number {
+    article#epilobium-article p:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+    }
+}
+
+article#epilobium-article p {
+    position: relative;
+    animation-name: goodness-list;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes tea-article {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 75%;
+    }
+}
+
+article#tea_article {
+    animation-name: tea-article;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#preparation>article {
+    animation-name: tea-article;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: -70%;
+        width: 100%;
+    }
+}
+
+div.quote-slide-left p {
+    animation: slide-left 60s linear infinite running;
+}
