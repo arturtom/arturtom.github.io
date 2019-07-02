@@ -9,6 +9,7 @@ body {
     min-width: 100%;
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 body::after {
@@ -37,8 +38,12 @@ table {
 }
 
 article {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
+}
+
+b {
+    font-weight: bold;
 }
 
 
@@ -74,7 +79,7 @@ article {
 /********************nav***********************/
 
 ul#navigation-list {
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     text-align: center;
     align-items: center;
@@ -91,6 +96,20 @@ nav {
     z-index: 5;
     width: 100%;
     background: rgb(154, 156, 150, .6);
+    box-shadow: 0 0 10px 10px rgb(154, 156, 150, .6)
+}
+
+nav a {
+    position: relative;
+}
+
+nav a:hover {
+    font-weight: bold !important;
+}
+
+#nav_welcome {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 
@@ -112,7 +131,7 @@ nav {
 }
 
 #epilobium {
-    padding: 5% 5%;
+    padding: 10% 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,9 +140,11 @@ nav {
 #epilobium>article {
     height: 100vh;
     width: 100%;
+    text-align: center;
 }
 
 #epilobium>article>p {
+    display: none;
     margin-bottom: 1rem;
 }
 
@@ -138,6 +159,24 @@ ul#goodness-list {
 ul#goodness-list li {
     width: 100%;
     display: inline;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul#goodness-list li::before {
+    content: '';
+    left: -15px;
+    top: 8px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#welcome {
+    position: relative;
+    height: 100vh;
 }
 
 #viewOfEpilobium {
@@ -154,6 +193,7 @@ ul#goodness-list li {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 3rem;
+    font-size: 1.4rem;
 }
 
 #cupOfTea {
@@ -172,13 +212,15 @@ ul#goodness-list li {
 }
 
 #preparation>article {
-    color: #F3F3F2;
+    /* color: #F3F3F2; */
     position: absolute;
     top: 45%;
     left: 75%;
     transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .4);
+    background: rgb(154, 156, 150, .8);
     width: 40%;
+    box-shadow: 0 0 10px 10px grey;
+    text-align: center;
 }
 
 #production {
@@ -202,9 +244,20 @@ ul#goodness-list li {
     text-align: center;
 }
 
-#production>article>p {
+th {
+    text-decoration: underline;
+}
+
+#production>article>p.p_high {
     width: 80%;
-    margin: 0 10%;
+    margin: 10% 10% 5%;
+    text-align: center;
+}
+
+#production>article>p.p_down {
+    width: 80%;
+    margin: 0 10% 5%;
+    text-align: center;
 }
 
 #ingredientsImg {
@@ -224,13 +277,16 @@ ul#goodness-list li {
 }
 
 #tea>article {
-    color: white;
+    display: none;
+    /* color: white; */
     position: absolute;
     top: 50%;
     left: 75%;
     width: 40%;
-    transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .2);
+    transform: translate(-180%, -50%);
+    background: rgb(154, 156, 150, .6);
+    box-shadow: 0 0 10px 10px grey;
+    text-align: center;
 }
 
 div.ingredientsSection {
@@ -238,13 +294,14 @@ div.ingredientsSection {
 }
 
 article.ingredientsSection {
-    color: white;
+    /* color: white; */
     position: absolute;
     width: 80%;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .4);
+    background: rgb(154, 156, 150, .8);
+    box-shadow: 0 0 10px 10px grey;
 }
 
 #goodness {
@@ -272,6 +329,7 @@ article.ingredientsSection {
 }
 
 #goodness>article>article {
+    text-align: center;
     position: relative;
     top: -70px;
 }
@@ -283,6 +341,7 @@ article.ingredientsSection {
 
 #quality p {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #contact {
@@ -325,22 +384,12 @@ footer {
 /********************footer***********************/
 
 div.quote-slide-left {
+    position: absolute;
     width: 100%;
     overflow: hidden;
+    bottom: 20px;
 }
 
 div.quote-slide-left p {
-    color: #f3f2f2;
-    animation: slide-left 60s linear infinite running;
-}
-
-@keyframes slide-left {
-    from {
-        margin-left: 100%;
-        width: 100%;
-    }
-    to {
-        margin-left: -70%;
-        width: 100%;
-    }
+    color: black;
 }

@@ -1,0 +1,304 @@
+@-webkit-keyframes article {
+  0% {
+    top: 40%;
+    left: 10%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    top: 40%;
+    left: 10%;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1), translate(-50%, -50%);
+            transform: scale(1), translate(-50%, -50%);
+  }
+}
+
+@keyframes article {
+  0% {
+    top: 40%;
+    left: 10%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    top: 40%;
+    left: 10%;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1), translate(-50%, -50%);
+            transform: scale(1), translate(-50%, -50%);
+  }
+}
+
+#index_article {
+  -webkit-animation-name: article;
+          animation-name: article;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes goodness-list {
+  from {
+    left: 110%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes goodness-list {
+  from {
+    left: 110%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.animation ul#goodness-list li {
+  -webkit-animation-name: goodness-list;
+          animation-name: goodness-list;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+ul#goodness-list li:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+ul#goodness-list li:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+ul#goodness-list li:nth-child(3) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+ul#goodness-list li:nth-child(4) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+ul#goodness-list li:nth-child(5) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+ul#goodness-list li:nth-child(6) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+ul#goodness-list li:nth-child(7) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+ul#goodness-list li:nth-child(8) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+ul#goodness-list li:nth-child(9) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+ul#goodness-list li:nth-child(10) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+ul#goodness-list li:nth-child(11) {
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+}
+
+article#epilobium-article.animation p:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+article#epilobium-article.animation p:nth-child(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+article#epilobium-article.animation p:nth-child(3) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+article#epilobium-article.animation p:nth-child(4) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+article#epilobium-article.animation p:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+article#epilobium-article.animation p {
+  position: relative;
+  -webkit-animation-name: goodness-list;
+          animation-name: goodness-list;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes tea-article {
+  from {
+    left: 125%;
+  }
+  to {
+    left: 75%;
+  }
+}
+
+@keyframes tea-article {
+  from {
+    left: 125%;
+  }
+  to {
+    left: 75%;
+  }
+}
+
+article#tea_article.animation {
+  -webkit-animation-name: tea-article;
+          animation-name: tea-article;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#preparation > article.animation {
+  -webkit-animation-name: tea-article;
+          animation-name: tea-article;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes ingredients-article {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes ingredients-article {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+.animation article.ingredientsSection {
+  -webkit-animation-name: ingredients-article;
+          animation-name: ingredients-article;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: -70%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: -70%;
+    width: 100%;
+  }
+}
+
+div.quote-slide-left p {
+  -webkit-animation: slide-left 60s linear infinite running;
+          animation: slide-left 60s linear infinite running;
+}
+
+@-webkit-keyframes rotate_animation {
+  0% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@keyframes rotate_animation {
+  0% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+.animation table#production_table {
+  -webkit-animation-name: rotate_animation;
+          animation-name: rotate_animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.animation table#goodness_table {
+  -webkit-animation-name: rotate_animation;
+          animation-name: rotate_animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+/*# sourceMappingURL=animation.css.map */
