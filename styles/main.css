@@ -27,6 +27,7 @@ body::after {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
@@ -392,4 +393,21 @@ div.quote-slide-left {
 
 div.quote-slide-left p {
     color: black;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    #index_article {
+        text-align: center;
+        color: #f3f2f2;
+        position: absolute;
+        width: 80%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 3rem;
+        font-size: 1.4rem;
+    }
 }
