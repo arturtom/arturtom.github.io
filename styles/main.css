@@ -395,9 +395,15 @@ div.quote-slide-left p {
     color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     html {
         font-size: 10px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        display: none;
     }
     #index_article {
         text-align: center;
