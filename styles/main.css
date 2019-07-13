@@ -212,16 +212,21 @@ ul#goodness-list li::before {
     height: 100vh;
 }
 
+#preparation>article>p {
+    padding: 0.5rem;
+}
+
 #preparation>article {
     /* color: #F3F3F2; */
     position: absolute;
     top: 45%;
     left: 75%;
     transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .8);
+    background: rgb(246, 238, 236, .8);
     width: 40%;
     box-shadow: 0 0 10px 10px grey;
     text-align: center;
+    padding: 5px;
 }
 
 #production {
@@ -282,12 +287,17 @@ th {
     /* color: white; */
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 70%;
     width: 40%;
-    transform: translate(-180%, -50%);
-    background: rgb(154, 156, 150, .6);
+    transform: translate(-167%, -45%);
+    background: rgb(246, 238, 236, .8);
     box-shadow: 0 0 10px 10px grey;
     text-align: center;
+    padding: 2%;
+}
+
+#tea>article p {
+    padding: 0.5rem;
 }
 
 div.ingredientsSection {
@@ -298,11 +308,27 @@ article.ingredientsSection {
     /* color: white; */
     position: absolute;
     width: 80%;
-    top: 42%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(154, 156, 150, .8);
+    background: rgb(246, 238, 236, .8);
     box-shadow: 0 0 10px 10px grey;
+    padding: 2%;
+}
+
+article.ingredientsSection table {
+    margin: 1%;
+    text-align: center;
+}
+
+article.ingredientsSection table,
+article.ingredientsSection th,
+article.ingredientsSection td {
+    border: 1px solid black;
+}
+
+article.ingredientsSection p {
+    padding: 1%;
 }
 
 #goodness {
@@ -324,7 +350,7 @@ article.ingredientsSection {
     justify-content: space-evenly;
     position: absolute;
     width: 80%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -333,6 +359,14 @@ article.ingredientsSection {
     text-align: center;
     position: relative;
     top: -70px;
+}
+
+#goodness>article table {
+    margin-bottom: 3rem;
+}
+
+#goodness p {
+    margin: 1rem;
 }
 
 #quality {
@@ -351,16 +385,15 @@ article.ingredientsSection {
 }
 
 #contact>img {
-    height: 100%;
-    width: 100%;
-    opacity: .5;
+    height: 100vh;
+    width: auto;
 }
 
 #contact>article {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-20%, -60%);
 }
 
 
@@ -386,13 +419,14 @@ footer {
 
 div.quote-slide-left {
     position: absolute;
-    width: 100%;
+    width: 110%;
     overflow: hidden;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 div.quote-slide-left p {
     color: black;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 1000px) {
