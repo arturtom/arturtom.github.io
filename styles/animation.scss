@@ -31,7 +31,7 @@
 
 .animation ul#goodness-list li {
     animation-name: goodness-list;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: both;
 }
@@ -39,7 +39,7 @@
 $goodness-list-li-number: 11;
 @for $i from 1 through $goodness-list-li-number {
     ul#goodness-list li:nth-child(#{$i}) {
-        animation-delay: 2s * $i;
+        animation-delay: 0.1s * $i;
     }
 }
 
