@@ -97,7 +97,9 @@ nav {
     z-index: 5;
     width: 100%;
     background: rgb(154, 156, 150, .6);
-    box-shadow: 0 0 10px 10px rgb(154, 156, 150, .6)
+    box-shadow: 0 0 10px 10px rgb(154, 156, 150, .6);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 nav a {
@@ -222,7 +224,7 @@ ul#goodness-list li::before {
     top: 45%;
     left: 75%;
     transform: translate(-50%, -50%);
-    background: rgb(246, 238, 236, .8);
+    background: rgb(246, 238, 236, .9);
     width: 40%;
     box-shadow: 0 0 10px 10px grey;
     text-align: center;
@@ -290,7 +292,7 @@ th {
     left: 70%;
     width: 40%;
     transform: translate(-167%, -45%);
-    background: rgb(246, 238, 236, .8);
+    background: rgb(246, 238, 236, .9);
     box-shadow: 0 0 10px 10px grey;
     text-align: center;
     padding: 2%;
@@ -311,7 +313,7 @@ article.ingredientsSection {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(246, 238, 236, .8);
+    background: rgb(246, 238, 236, .9);
     box-shadow: 0 0 10px 10px grey;
     padding: 2%;
 }
