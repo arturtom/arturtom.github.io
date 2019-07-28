@@ -84,6 +84,7 @@ ul#navigation-list {
     display: flex;
     text-align: center;
     align-items: center;
+    color: #F3EBE6;
 }
 
 ul#navigation-list li {
@@ -113,6 +114,10 @@ nav a:hover {
 #nav_welcome {
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+nav input {
+    display: none;
 }
 
 
@@ -429,27 +434,4 @@ div.quote-slide-left {
 div.quote-slide-left p {
     color: black;
     font-size: 1.3rem;
-}
-
-@media (max-width: 1000px) {
-    html {
-        font-size: 10px;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    nav {
-        display: none;
-    }
-    #index_article {
-        text-align: center;
-        color: #f3f2f2;
-        position: absolute;
-        width: 80%;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        line-height: 3rem;
-        font-size: 1.4rem;
-    }
 }

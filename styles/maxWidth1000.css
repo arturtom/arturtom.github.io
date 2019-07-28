@@ -1,0 +1,97 @@
+@media (max-width: 1000px) {
+    html {
+        font-size: 10px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #index_article {
+        text-align: center;
+        color: #f3f2f2;
+        position: absolute;
+        width: 80%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 3rem;
+        font-size: 1.4rem;
+    }
+    nav span {
+        background-color: black;
+        width: 20px;
+        height: 3px;
+        margin: 2px;
+        position: relative;
+        display: block;
+        top: 25px;
+        left: 25px;
+        z-index: 2;
+    }
+    nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        background: none !important;
+        box-shadow: none;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: none !important;
+    }
+    nav input {
+        display: inline;
+        position: absolute;
+        top: 24px;
+        left: 18px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 3;
+        width: 30px;
+        height: 20px;
+    }
+    #nav span:first-child {
+        transform-origin: 0% 0%;
+    }
+    #nav span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    #nav input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-1px, 5px);
+        background: #232323;
+    }
+    #nav input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #nav input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    /* #nav input:checked~ul#navigation-list { */
+    /* display: block; */
+    /* } */
+    ul#navigation-list {
+        display: flex;
+        position: absolute;
+        width: 50%;
+        /* margin: -100px 0 0 -50px; */
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        flex-direction: column;
+    }
+    ul#navigation-list li {
+        padding: 5px 0;
+        font-size: 22px;
+        color: black;
+    }
+    /*
+ * And let's slide it in from the left
+ */
+    #nav input:checked~ul {
+        transform: none;
+    }
+}
