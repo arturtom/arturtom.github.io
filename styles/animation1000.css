@@ -1,0 +1,17 @@
+@media (max-width: 1000px) {
+    article#epilobium-article.animation p {
+        animation-name: none;
+    }
+    article#tea_article.animation {
+        animation-name: none;
+    }
+    #preparation>article.animation {
+        animation-name: none;
+    }
+    .animation article.ingredientsSection {
+        animation-name: none;
+    }
+    .animation ul#goodness-list li {
+        animation-name: none;
+    }
+}
