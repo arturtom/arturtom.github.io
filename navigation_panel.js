@@ -127,3 +127,21 @@ var navigationSubPageOptions = document.querySelectorAll("#navigation-list a");
         this.style.fontWeight = 'bold';
     })
 })*/
+
+var checkbox = document.querySelector('#nav_checkbox');
+var navList = document.querySelector('#navigation-list');
+
+checkbox.addEventListener('change', checkBoxEvent);
+
+function checkBoxEvent(checkbox) {
+    if (this.checked) {
+        document.addEventListener('click', disabledCheckbox)
+    }
+}
+
+function disabledCheckbox(evt) {
+    if (evt.target != navList) {
+        checkbox.checked = false;
+        document.removeEventListener('click', disabledCheckbox)
+    }
+}
