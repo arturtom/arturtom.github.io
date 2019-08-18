@@ -156,6 +156,9 @@
     #goodness>article table {
         margin-bottom: 6rem;
     }
+    #goodness {
+        margin-bottom: 3rem;
+    }
     #production>article>p.p_high {
         width: 80%;
         margin: 25% 10% 5%;
