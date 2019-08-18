@@ -110,14 +110,16 @@
     #preparation>article {
         /* color: #F3F3F2; */
         position: absolute;
-        top: 45%;
-        left: 74%;
-        transform: translate(-80%, -50%);
+        top: 70%;
+        left: 50%;
         background: rgb(246, 238, 236, .9);
         width: 75%;
         box-shadow: 0 0 10px 10px grey;
         text-align: center;
         padding: 5px;
+    }
+    #preparation>img {
+        height: auto;
     }
     div#ingredients {
         position: relative;
@@ -134,6 +136,16 @@
         background: rgb(246, 238, 236, .9);
         box-shadow: 0 0 10px 10px grey;
         padding: 2%;
+    }
+    .ingredientsSection th,
+    .ingredientsSection td {
+        width: 33%;
+        vertical-align: middle;
+        padding: 5px;
+    }
+    article.ingredientsSection p {
+        padding: 5%;
+        text-align: center;
     }
     ul#goodness-list li {
         width: 75%;

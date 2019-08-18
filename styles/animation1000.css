@@ -14,4 +14,7 @@
     .animation ul#goodness-list li {
         animation-name: none;
     }
+    #index_article {
+        animation-name: none;
+    }
 }
