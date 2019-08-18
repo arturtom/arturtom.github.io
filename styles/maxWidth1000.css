@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
     html {
-        font-size: 10px;
+        font-size: 11px;
     }
     body {
         overflow-x: hidden;
@@ -163,7 +163,10 @@
     }
     #production>article>p.p_down {
         width: 80%;
-        margin: 0 10% 35%;
+        margin: 10% 10% 35%;
         text-align: center;
+    }
+    #quality {
+        padding: 5% 5% 30%;
     }
 }
