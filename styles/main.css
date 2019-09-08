@@ -18,12 +18,11 @@ body::after {
     position: fixed;
     top: 0;
     left: 0;
-    background: url("/images/iStock-845969562.jpg");
+    background: url("/images/wierzbowkaRoslina.jpg");
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
-    zoom: 20%;
 }
 
 a {
