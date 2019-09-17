@@ -39,7 +39,7 @@ table {
 }
 
 article {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 2rem;
 }
 
@@ -118,6 +118,13 @@ nav a:hover {
 
 nav input {
     display: none;
+}
+
+a#nav_contact {
+    text-decoration: underline;
+    text-decoration-color: #3366ff;
+    color: #3366ff;
+    font-size: 1.3rem !important;
 }
 
 
@@ -293,7 +300,7 @@ th {
     display: none;
     /* color: white; */
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 70%;
     width: 40%;
     transform: translate(-167%, -45%);
