@@ -98,7 +98,7 @@
         display: none;
         /* color: white; */
         position: absolute;
-        top: 50%;
+        top: 75%;
         left: 75%;
         width: 75%;
         transform: translate(-82%, -50%);
@@ -109,7 +109,7 @@
     }
     #preparation>article {
         /* color: #F3F3F2; */
-        position: absolute;
+        /* position: relative; */
         top: 70%;
         left: 50%;
         background: rgb(246, 238, 236, .9);
@@ -119,7 +119,12 @@
         padding: 5px;
     }
     #preparation>img {
-        height: auto;
+        height: 100%;
+        width: 100%;
+        min-height: auto;
+    }
+    #preparation {
+        display: flex;
     }
     div#ingredients {
         position: relative;
@@ -175,5 +180,8 @@
     article {
         font-size: 13px;
         line-height: 2rem;
+    }
+    #epilobium>article>p {
+        display: block;
     }
 }
