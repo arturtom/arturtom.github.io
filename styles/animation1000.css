@@ -17,4 +17,7 @@
     #index_article {
         animation-name: none;
     }
+    div.quote-slide-left p {
+        animation-name: none;
+    }
 }
