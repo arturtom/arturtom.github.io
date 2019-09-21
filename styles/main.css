@@ -245,7 +245,7 @@ ul#goodness-list li::before {
 }
 
 #production {
-    margin: 5% 0;
+    margin: 15% 0;
     width: 100%;
     min-height: -webkit-fill-available;
 }
@@ -301,7 +301,7 @@ th {
     display: none;
     /* color: white; */
     position: absolute;
-    top: 49%;
+    top: 40%;
     left: 70%;
     width: 40%;
     transform: translate(-167%, -45%);
@@ -323,7 +323,7 @@ article.ingredientsSection {
     /* color: white; */
     position: absolute;
     width: 80%;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(246, 238, 236, .9);
