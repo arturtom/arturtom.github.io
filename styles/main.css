@@ -192,11 +192,10 @@ ul#goodness-list li::before {
 
 #welcome {
     position: relative;
-    min-height: -webkit-fill-available;
+    min-height: 100vh;
 }
 
 #viewOfEpilobium {
-    min-height: -webkit-fill-available;
     width: 100%;
     height: 100%;
 }
