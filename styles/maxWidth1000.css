@@ -98,7 +98,7 @@
         display: none;
         /* color: white; */
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 75%;
         width: 75%;
         transform: translate(-82%, -50%);
@@ -163,6 +163,7 @@
     }
     #goodness {
         margin-bottom: 3rem;
+        margin-top: 1rem;
     }
     #production>article>p.p_high {
         width: 80%;
@@ -184,7 +185,7 @@
     #epilobium>article>p {
         display: block;
     }
-    div.quote-slide-left p {
-        display: none;
+    div.quote-slide-left {
+        visibility: hidden;
     }
 }
