@@ -192,7 +192,7 @@ ul#goodness-list li::before {
 
 #welcome {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #viewOfEpilobium {
