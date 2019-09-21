@@ -1,11 +1,11 @@
 @keyframes article {
     0% {
-        top: 40%;
+        top: 30%;
         left: 10%;
         transform: scale(0);
     }
     50% {
-        top: 40%;
+        top: 30%;
         left: 10%;
         transform: scale(0.5);
     }
@@ -16,7 +16,7 @@
 
 #index_article {
     animation-name: article;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 }
 
@@ -46,14 +46,14 @@ $goodness-list-li-number: 11;
 $epilobium-p-number: 5;
 @for $i from 1 through $epilobium-p-number {
     article#epilobium-article.animation p:nth-child(#{$i}) {
-        animation-delay: 0.4s * $i;
+        animation-delay: 0.1s * $i;
     }
 }
 
 article#epilobium-article.animation p {
     position: relative;
     animation-name: goodness-list;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: both;
 }
@@ -69,14 +69,14 @@ article#epilobium-article.animation p {
 
 article#tea_article.animation {
     animation-name: tea-article;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: both;
 }
 
 #preparation>article.animation {
     animation-name: tea-article;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: both;
 }
@@ -92,7 +92,7 @@ article#tea_article.animation {
 
 .animation article.ingredientsSection {
     animation-name: ingredients-article;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: both;
 }

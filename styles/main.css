@@ -147,6 +147,7 @@ a#nav_contact {
 }
 
 #epilobium {
+    min-height: -webkit-fill-available;
     padding: 10% 5%;
     display: flex;
     flex-direction: row;
@@ -154,7 +155,6 @@ a#nav_contact {
 }
 
 #epilobium>article {
-    height: 100vh;
     width: 100%;
     text-align: center;
 }
@@ -192,7 +192,7 @@ ul#goodness-list li::before {
 
 #welcome {
     position: relative;
-    /* height: 100vh; */
+    min-height: -webkit-fill-available;
 }
 
 #viewOfEpilobium {
@@ -205,7 +205,7 @@ ul#goodness-list li::before {
     color: #f3f2f2;
     position: absolute;
     width: 80%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 3rem;
@@ -219,12 +219,12 @@ ul#goodness-list li::before {
 
 #preparation {
     position: relative;
-    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #preparation>img {
     width: 100%;
-    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #preparation>article>p {
@@ -247,7 +247,7 @@ ul#goodness-list li::before {
 #production {
     margin: 5% 0;
     width: 100%;
-    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #production>article {
@@ -289,7 +289,7 @@ th {
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #tea>img {
@@ -348,26 +348,19 @@ article.ingredientsSection p {
 
 #goodness {
     position: relative;
-    height: 100vh;
-}
-
-#goodness>img {
-    height: 100%;
-    width: 100%;
-    opacity: .5;
-    position: fixed;
 }
 
 #goodness>article {
-    height: 100%;
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: absolute;
+    position: relative;
     width: 80%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 60%; */
+    left: 10%;
+    padding-top: 7%;
+    /* transform: translate(-50%, -50%); */
 }
 
 #goodness>article>article {
@@ -386,7 +379,7 @@ article.ingredientsSection p {
 
 #quality {
     padding: 5%;
-    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #quality p {
@@ -395,20 +388,22 @@ article.ingredientsSection p {
 }
 
 #contact {
-    height: 100vh;
+    min-height: -webkit-fill-available;
     position: relative;
 }
 
 #contact>img {
-    position: absolute;
-    width: 30%;
-    height: 80%;
-    top: 10%;
+    position: relative;
+    width: 20%;
+    height: 60%;
+    top: 30%;
     left: 10%;
     border-color: black;
+    padding-top: -30%;
 }
 
 #contact>article {
+    min-height: -webkit-fill-available;
     position: absolute;
     top: 50%;
     left: 50%;
