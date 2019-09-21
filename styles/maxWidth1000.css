@@ -98,7 +98,7 @@
         display: none;
         /* color: white; */
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 75%;
         width: 75%;
         transform: translate(-82%, -50%);
@@ -110,7 +110,7 @@
     #preparation>article {
         /* color: #F3F3F2; */
         /* position: relative; */
-        top: 70%;
+        top: 75%;
         left: 50%;
         background: rgb(246, 238, 236, .9);
         width: 75%;
