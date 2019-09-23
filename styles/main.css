@@ -410,6 +410,37 @@ article.ingredientsSection p {
     /* transform: translate(-20%, -60%); */
 }
 
+#products {
+    display: flex;
+}
+
+.gallery .inline_images {
+    display: inline !important;
+    width: 150px;
+    height: 100px;
+    margin: 10px 5px;
+    border: 2px solid black;
+}
+
+.gallery {
+    padding: 8% 5%;
+}
+
+.gallery a {
+    width: fit-content;
+}
+
+#products article {
+    padding: 10% 5%;
+}
+
+#products button {
+    position: relative;
+    top: -200px;
+    height: 30px;
+    width: 20px;
+}
+
 
 /********************main***********************/
 
