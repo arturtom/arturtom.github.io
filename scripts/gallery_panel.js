@@ -8,11 +8,16 @@ imagesArray.forEach(function(img) {
 function changeBigImg(img) {
     var mainImg = document.querySelector('#mainImg');
     var smallImgAttribute = this.getAttribute('src');
-    var number = this.getAttribute('nr');
+    var smallImgNumber = this.getAttribute('nr');
+    var bigImgNumber = mainImg.getAttribute('nr');
     var mainImgTarget = document.querySelector('#mainImgTarget');
     mainImg.setAttribute('src', smallImgAttribute);
-    mainImg.setAttribute('nr', number);
+    mainImg.setAttribute('nr', smallImgNumber);
     mainImgTarget.setAttribute('href', smallImgAttribute);
+    var newUnderlineDiv = document.querySelector("div[nr='" + smallImgNumber + "']");
+    newUnderlineDiv.style.borderBottom = "1px solid black";
+    var oldUnderlineDiv = document.querySelector("div[nr='" + bigImgNumber + "']");
+    oldUnderlineDiv.style.borderBottom = "none";
 }
 
 /*******************************************************************/
@@ -55,9 +60,14 @@ function setPreviousImg() {
 
 function setImg(mainImg, image) {
     var src = image.getAttribute('src');
-    var number = image.getAttribute('nr');
+    var smallImgNumber = image.getAttribute('nr');
+    var bigImgNumber = mainImg.getAttribute('nr');
     var mainImgTarget = document.querySelector('#mainImgTarget');
     mainImgTarget.setAttribute('href', src);
     mainImg.setAttribute('src', src);
-    mainImg.setAttribute('nr', number);
+    mainImg.setAttribute('nr', smallImgNumber);
+    var newUnderlineDiv = document.querySelector("div[nr='" + smallImgNumber + "']");
+    newUnderlineDiv.style.borderBottom = "1px solid black";
+    var oldUnderlineDiv = document.querySelector("div[nr='" + bigImgNumber + "']");
+    oldUnderlineDiv.style.borderBottom = "none";
 }

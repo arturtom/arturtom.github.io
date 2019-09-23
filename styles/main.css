@@ -419,7 +419,6 @@ article.ingredientsSection p {
     width: 150px;
     height: 100px;
     margin: 10px 5px;
-    border: 2px solid black;
 }
 
 .gallery {
@@ -439,6 +438,10 @@ article.ingredientsSection p {
     top: -200px;
     height: 30px;
     width: 20px;
+}
+
+div[nr='0'] {
+    border-bottom: 1px solid black;
 }
 
 
