@@ -37,12 +37,10 @@
 }
 
 #index_article {
-  -webkit-animation-name: article;
-          animation-name: article;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation: article 1s linear both;
+  -webkit-animation: article 1s linear both;
+  -moz-animation: article 1s linear both;
+  -o-animation: article 1s linear both;
 }
 
 @-webkit-keyframes goodness-list {
@@ -64,14 +62,10 @@
 }
 
 .animation ul#goodness-list li {
-  -webkit-animation-name: goodness-list;
-          animation-name: goodness-list;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: goodness-list 1s ease both;
+  -webkit-animation: goodness-list 1s ease both;
+  -moz-animation: goodness-list 1s ease both;
+  -o-animation: goodness-list 1s ease both;
 }
 
 ul#goodness-list li:nth-child(1) {
@@ -156,14 +150,10 @@ article#epilobium-article.animation p:nth-child(5) {
 
 article#epilobium-article.animation p {
   position: relative;
-  -webkit-animation-name: goodness-list;
-          animation-name: goodness-list;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: goodness-list 1s ease both;
+  -webkit-animation: goodness-list 1s ease both;
+  -moz-animation: goodness-list 1s ease both;
+  -o-animation: goodness-list 1s ease both;
 }
 
 @-webkit-keyframes tea-article {
@@ -185,25 +175,17 @@ article#epilobium-article.animation p {
 }
 
 article#tea_article.animation {
-  -webkit-animation-name: tea-article;
-          animation-name: tea-article;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: tea-article 2s ease both;
+  -webkit-animation: tea-article 2s ease both;
+  -moz-animation: tea-article 2s ease both;
+  -o-animation: tea-article 2s ease both;
 }
 
 #preparation > article.animation {
-  -webkit-animation-name: tea-article;
-          animation-name: tea-article;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: tea-article 2s ease both;
+  -webkit-animation: tea-article 2s ease both;
+  -moz-animation: tea-article 2s ease both;
+  -o-animation: tea-article 2s ease both;
 }
 
 @-webkit-keyframes ingredients-article {
@@ -225,14 +207,10 @@ article#tea_article.animation {
 }
 
 .animation article.ingredientsSection {
-  -webkit-animation-name: ingredients-article;
-          animation-name: ingredients-article;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: ingredients-article 2s ease both;
+  -webkit-animation: ingredients-article 2s ease both;
+  -moz-animation: ingredients-article 2s ease both;
+  -o-animation: ingredients-article 2s ease both;
 }
 
 @-webkit-keyframes slide-left {
@@ -258,8 +236,10 @@ article#tea_article.animation {
 }
 
 div.quote-slide-left p {
+  animation: slide-left 60s linear infinite running;
   -webkit-animation: slide-left 60s linear infinite running;
-          animation: slide-left 60s linear infinite running;
+  -moz-animation: slide-left 60s linear infinite running;
+  -o-animation: slide-left 60s linear infinite running;
 }
 
 @-webkit-keyframes rotate_animation {
@@ -285,20 +265,16 @@ div.quote-slide-left p {
 }
 
 .animation table#production_table {
-  -webkit-animation-name: rotate_animation;
-          animation-name: rotate_animation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation: rotate_animation 1s ease both;
+  -webkit-animation: rotate_animation 1s ease both;
+  -moz-animation: rotate_animation 1s ease both;
+  -o-animation: rotate_animation 1s ease both;
 }
 
 .animation table#goodness_table {
-  -webkit-animation-name: rotate_animation;
-          animation-name: rotate_animation;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation: rotate_animation 2s ease both;
+  -webkit-animation: rotate_animation 2s ease both;
+  -moz-animation: rotate_animation 2s ease both;
+  -o-animation: rotate_animation 2s ease both;
 }
 /*# sourceMappingURL=animation.css.map */

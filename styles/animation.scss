@@ -15,9 +15,10 @@
 }
 
 #index_article {
-    animation-name: article;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation: article 1s linear both;
+    -webkit-animation: article 1s linear both;
+    -moz-animation: article 1s linear both;
+    -o-animation: article 1s linear both;
 }
 
 @keyframes goodness-list {
@@ -30,10 +31,10 @@
 }
 
 .animation ul#goodness-list li {
-    animation-name: goodness-list;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+    animation: goodness-list 1s ease both;
+    -webkit-animation: goodness-list 1s ease both;
+    -moz-animation: goodness-list 1s ease both;
+    -o-animation: goodness-list 1s ease both;
 }
 
 $goodness-list-li-number: 11;
@@ -52,10 +53,10 @@ $epilobium-p-number: 5;
 
 article#epilobium-article.animation p {
     position: relative;
-    animation-name: goodness-list;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+    animation: goodness-list 1s ease both;
+    -webkit-animation: goodness-list 1s ease both;
+    -moz-animation: goodness-list 1s ease both;
+    -o-animation: goodness-list 1s ease both;
 }
 
 @keyframes tea-article {
@@ -68,17 +69,17 @@ article#epilobium-article.animation p {
 }
 
 article#tea_article.animation {
-    animation-name: tea-article;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+    animation: tea-article 2s ease both;
+    -webkit-animation: tea-article 2s ease both;
+    -moz-animation: tea-article 2s ease both;
+    -o-animation: tea-article 2s ease both;
 }
 
 #preparation>article.animation {
-    animation-name: tea-article;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+    animation: tea-article 2s ease both;
+    -webkit-animation: tea-article 2s ease both;
+    -moz-animation: tea-article 2s ease both;
+    -o-animation: tea-article 2s ease both;
 }
 
 @keyframes ingredients-article {
@@ -91,10 +92,10 @@ article#tea_article.animation {
 }
 
 .animation article.ingredientsSection {
-    animation-name: ingredients-article;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+    animation: ingredients-article 2s ease both;
+    -webkit-animation: ingredients-article 2s ease both;
+    -moz-animation: ingredients-article 2s ease both;
+    -o-animation: ingredients-article 2s ease both;
 }
 
 @keyframes slide-left {
@@ -110,6 +111,9 @@ article#tea_article.animation {
 
 div.quote-slide-left p {
     animation: slide-left 60s linear infinite running;
+    -webkit-animation: slide-left 60s linear infinite running;
+    -moz-animation: slide-left 60s linear infinite running;
+    -o-animation: slide-left 60s linear infinite running;
 }
 
 @keyframes rotate_animation {
@@ -122,13 +126,15 @@ div.quote-slide-left p {
 }
 
 .animation table#production_table {
-    animation-name: rotate_animation;
-    animation-duration: 1s;
-    animation-timing-function: ease;
+    animation: rotate_animation 1s ease both;
+    -webkit-animation: rotate_animation 1s ease both;
+    -moz-animation: rotate_animation 1s ease both;
+    -o-animation: rotate_animation 1s ease both;
 }
 
 .animation table#goodness_table {
-    animation-name: rotate_animation;
-    animation-duration: 2s;
-    animation-timing-function: ease;
+    animation: rotate_animation 2s ease both;
+    -webkit-animation: rotate_animation 2s ease both;
+    -moz-animation: rotate_animation 2s ease both;
+    -o-animation: rotate_animation 2s ease both;
 }

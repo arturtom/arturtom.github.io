@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
 }
 
 body::after {
@@ -148,6 +150,8 @@ a#nav_contact {
 
 #epilobium {
     min-height: -webkit-fill-available;
+    /* min-height: -moz-min-content; */
+    min-height: 100vh;
     padding: 10% 5%;
     display: flex;
     flex-direction: row;
@@ -177,17 +181,18 @@ ul#goodness-list li {
     display: inline;
     position: relative;
     padding-left: 30px;
+    margin-top: 5px;
 }
 
 ul#goodness-list li::before {
     content: '';
-    left: -15px;
-    top: 8px;
+    top: -15px;
+    left: -30px;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid red;
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid red; */
+    background-image: url("/images/lisc_herbaty.png");
 }
 
 #welcome {
@@ -388,6 +393,7 @@ article.ingredientsSection p {
 }
 
 #contact {
+    padding: 5% 0;
     min-height: -webkit-fill-available;
     position: relative;
 }
@@ -396,14 +402,13 @@ article.ingredientsSection p {
     position: relative;
     width: 20%;
     height: 60%;
-    top: 30%;
+    top: 20%;
     left: 10%;
     border-color: black;
     padding-top: -30%;
 }
 
 #contact>article {
-    min-height: -webkit-fill-available;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -444,6 +449,10 @@ div[nr='0'] {
     border-bottom: 1px solid black;
 }
 
+#mainImg {
+    box-shadow: 0 0 10px 10px grey;
+}
+
 
 /********************main***********************/
 
@@ -469,7 +478,6 @@ div.quote-slide-left {
     position: absolute;
     width: 120%;
     overflow: hidden;
-    bottom: 40px;
 }
 
 div.quote-slide-left p {
