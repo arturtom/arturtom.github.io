@@ -124,28 +124,28 @@ ul#goodness-list li:nth-child(11) {
 }
 
 article#epilobium-article.animation p:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+article#epilobium-article.animation p:nth-child(2) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-article#epilobium-article.animation p:nth-child(2) {
+article#epilobium-article.animation p:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+article#epilobium-article.animation p:nth-child(4) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-article#epilobium-article.animation p:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-article#epilobium-article.animation p:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
 article#epilobium-article.animation p:nth-child(5) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 article#epilobium-article.animation p {

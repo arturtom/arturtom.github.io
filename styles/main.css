@@ -353,6 +353,7 @@ article.ingredientsSection p {
 
 #goodness {
     position: relative;
+    padding: 4% 0;
 }
 
 #goodness>article {
