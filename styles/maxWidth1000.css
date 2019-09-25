@@ -186,7 +186,12 @@
         display: block;
     }
     div.quote-slide-left {
-        visibility: hidden;
+        position: relative;
+        width: 80%;
+        padding: 20% 0;
+        margin: auto;
+        line-height: 1.5;
+        text-align: center;
     }
     #mainImg {
         width: 100%;
@@ -213,5 +218,24 @@
     }
     #products {
         flex-direction: column;
+    }
+    #mainImgTarget {
+        pointer-events: none;
+    }
+    #contact {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact>article {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5% auto;
+    }
+    #contact>img {
+        width: 60%;
+        margin: auto;
+        left: 0;
     }
 }
