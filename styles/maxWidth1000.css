@@ -95,7 +95,7 @@
         transform: none;
     }
     #tea>article {
-        display: none;
+        display: block;
         /* color: white; */
         position: absolute;
         top: 85%;

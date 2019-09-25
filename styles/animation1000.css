@@ -20,4 +20,10 @@
     div.quote-slide-left p {
         animation-name: none;
     }
+    .animation table#goodness_table {
+        animation-name: none;
+    }
+    .animation table#production_table {
+        animation-name: none;
+    }
 }
