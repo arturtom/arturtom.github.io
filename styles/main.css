@@ -384,7 +384,7 @@ article.ingredientsSection p {
 }
 
 #quality {
-    padding: 5%;
+    padding: 5% 5% 10%;
     min-height: -webkit-fill-available;
 }
 
@@ -418,6 +418,7 @@ article.ingredientsSection p {
 
 #products {
     display: flex;
+    padding: 0 0 5%;
 }
 
 .gallery .inline_images {
@@ -452,6 +453,8 @@ div[nr='0'] {
 
 #mainImg {
     box-shadow: 0 0 10px 10px grey;
+    width: 614px;
+    height: 400px;
 }
 
 
