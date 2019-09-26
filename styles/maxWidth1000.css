@@ -238,4 +238,7 @@
         margin: auto;
         left: 0;
     }
+    div.quote-slide-left br {
+        display: block;
+    }
 }

@@ -488,3 +488,7 @@ div.quote-slide-left p {
     color: black;
     font-size: 1.3rem;
 }
+
+div.quote-slide-left br {
+    display: none;
+}
