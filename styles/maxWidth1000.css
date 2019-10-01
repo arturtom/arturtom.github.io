@@ -110,10 +110,11 @@
     #preparation>article {
         /* color: #F3F3F2; */
         /* position: relative; */
+        margin: 10% 0;
         top: 75%;
         left: 50%;
         background: rgb(246, 238, 236, .9);
-        width: 75%;
+        width: 90%;
         box-shadow: 0 0 10px 10px grey;
         text-align: center;
         padding: 5px;
@@ -164,6 +165,9 @@
     #goodness {
         margin-bottom: 3rem;
         margin-top: 1rem;
+    }
+    #production {
+        margin: 40% 0;
     }
     #production>article>p.p_high {
         width: 80%;

@@ -3,10 +3,16 @@
                     font-size: 22px;
                     line-height: 2rem;
                 }
+                #production {
+                    margin: 15% 0 20%;
+                }
                 #production>article>p.p_down {
                     margin: 5% 10% 5%;
                 }
                 article.ingredientsSection {
                     padding: 1%;
+                }
+                #quality {
+                    padding: 10% 5% 15%;
                 }
             }

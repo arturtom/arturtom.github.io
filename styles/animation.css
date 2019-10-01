@@ -123,6 +123,21 @@ ul#goodness-list li:nth-child(11) {
           animation-delay: 1.1s;
 }
 
+ul#goodness-list li:nth-child(12) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+ul#goodness-list li:nth-child(13) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+ul#goodness-list li:nth-child(14) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
 article#epilobium-article.animation p:nth-child(1) {
   -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
