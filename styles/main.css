@@ -399,7 +399,7 @@ article.ingredientsSection p {
     position: relative;
 }
 
-#contact>img {
+#herbata_carska_logo {
     position: relative;
     width: 20%;
     height: 60%;
@@ -455,6 +455,10 @@ div[nr='0'] {
     box-shadow: 0 0 10px 10px grey;
     width: 614px;
     height: 400px;
+}
+
+#facebookLogo {
+    width: 200px;
 }
 
 
