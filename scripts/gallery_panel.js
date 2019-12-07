@@ -41,7 +41,7 @@ function changeImg() {
 function setNextImg() {
     var mainImg = document.querySelector('#mainImg');
     var number = mainImg.getAttribute('nr');
-    if (number == 3) {
+    if (number == 8) {
         setImg(mainImg, imagesArray[0]);
     } else {
         setImg(mainImg, imagesArray[parseInt(number) + 1]);
@@ -52,7 +52,7 @@ function setPreviousImg() {
     var mainImg = document.querySelector('#mainImg');
     var number = mainImg.getAttribute('nr');
     if (number == 0) {
-        setImg(mainImg, imagesArray[3]);
+        setImg(mainImg, imagesArray[8]);
     } else {
         setImg(mainImg, imagesArray[parseInt(number) - 1]);
     }

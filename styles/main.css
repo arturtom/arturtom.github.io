@@ -436,6 +436,12 @@ article.ingredientsSection p {
     width: fit-content;
 }
 
+.gallery_menu {
+    display: flex !important;
+    width: 50%;
+    overflow-x: scroll;
+}
+
 #products article {
     padding: 10% 5%;
 }
