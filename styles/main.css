@@ -438,8 +438,8 @@ article.ingredientsSection p {
 
 .gallery_menu {
     display: flex !important;
-    width: 80%;
-    overflow-x: scroll;
+    /* width: 80%; */
+    /* overflow-x: scroll; */
 }
 
 #products article {
