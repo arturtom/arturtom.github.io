@@ -1,6 +1,6 @@
 const inlineImages = document.querySelectorAll("img[class='inline_images']");
 const imagesArray = [...inlineImages];
-
+const imagesNumber = 4;
 imagesArray.forEach(function(img) {
     img.addEventListener('click', changeBigImg)
 })
@@ -41,7 +41,7 @@ function changeImg() {
 function setNextImg() {
     var mainImg = document.querySelector('#mainImg');
     var number = mainImg.getAttribute('nr');
-    if (number == 9) {
+    if (number == imagesNumber) {
         setImg(mainImg, imagesArray[0]);
     } else {
         setImg(mainImg, imagesArray[parseInt(number) + 1]);
@@ -52,7 +52,7 @@ function setPreviousImg() {
     var mainImg = document.querySelector('#mainImg');
     var number = mainImg.getAttribute('nr');
     if (number == 0) {
-        setImg(mainImg, imagesArray[9]);
+        setImg(mainImg, imagesArray[imagesNumber]);
     } else {
         setImg(mainImg, imagesArray[parseInt(number) - 1]);
     }

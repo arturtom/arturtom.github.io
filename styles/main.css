@@ -438,7 +438,7 @@ article.ingredientsSection p {
 
 .gallery_menu {
     display: flex !important;
-    width: 50%;
+    width: 80%;
     overflow-x: scroll;
 }
 
