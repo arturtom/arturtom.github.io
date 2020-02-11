@@ -411,8 +411,9 @@ article.ingredientsSection p {
 
 #contact>article {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 40%;
+    width: 50%;
     /* transform: translate(-20%, -60%); */
 }
 
@@ -443,7 +444,8 @@ article.ingredientsSection p {
 }
 
 #products article {
-    padding: 10% 5%;
+    padding: 25% 5%;
+    width: 20%;
 }
 
 #products button {
@@ -451,6 +453,17 @@ article.ingredientsSection p {
     top: -200px;
     height: 30px;
     width: 20px;
+    background: url(/images/lisc_herbaty.png);
+    background-repeat: 8px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8px 8px 8px 32px;
+    outline: none;
+    border: none;
+}
+
+#products button.left {
+    transform: rotate(180deg);
 }
 
 div[nr='0'] {
