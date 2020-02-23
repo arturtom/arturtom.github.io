@@ -8,7 +8,7 @@ body {
     min-height: 100%;
     min-width: 100%;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto Slab';
     overflow-x: hidden;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -76,6 +76,11 @@ b {
     font-size: 1.2em;
 }
 
+button.right,
+button.left {
+    cursor: pointer;
+}
+
 
 /********************header***********************/
 
@@ -83,6 +88,7 @@ b {
 /********************nav***********************/
 
 ul#navigation-list {
+    padding: 0 2%;
     font-size: 1em;
     display: flex;
     text-align: center;
@@ -104,6 +110,7 @@ nav {
     box-shadow: 0 0 10px 10px rgb(154, 156, 150, .6);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    padding-bottom: 5px;
 }
 
 nav a {
@@ -124,9 +131,7 @@ nav input {
 }
 
 a#nav_contact {
-    text-decoration: underline;
-    text-decoration-color: #3366ff;
-    color: #3366ff;
+    color: rgb(127, 54, 92);
     font-size: 1.3rem !important;
 }
 
@@ -439,8 +444,7 @@ article.ingredientsSection p {
 
 .gallery_menu {
     display: flex !important;
-    /* width: 80%; */
-    /* overflow-x: scroll; */
+    justify-content: space-between;
 }
 
 #products article {
@@ -466,8 +470,12 @@ article.ingredientsSection p {
     transform: rotate(180deg);
 }
 
-div[nr='0'] {
-    border-bottom: 1px solid black;
+div[nr='0'] img.inline_images {
+    outline: 4px solid orange;
+}
+
+img.inline_images:hover {
+    cursor: pointer;
 }
 
 #mainImg {
@@ -478,6 +486,22 @@ div[nr='0'] {
 
 #facebookLogo {
     width: 200px;
+}
+
+#shopLink {
+    color: blue;
+}
+
+div[class*='facebook_wrapper'] {
+    margin-top: 40px;
+}
+
+div[class*='facebook_wrapper'] a {
+    display: flex !important;
+}
+
+div[class*='facebook_wrapper'] a img {
+    margin: auto !important;
 }
 
 

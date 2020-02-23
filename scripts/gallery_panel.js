@@ -14,10 +14,10 @@ function changeBigImg(img) {
     mainImg.setAttribute('src', smallImgAttribute);
     mainImg.setAttribute('nr', smallImgNumber);
     mainImgTarget.setAttribute('href', smallImgAttribute);
-    var newUnderlineDiv = document.querySelector("div[nr='" + smallImgNumber + "']");
-    newUnderlineDiv.style.borderBottom = "1px solid black";
-    var oldUnderlineDiv = document.querySelector("div[nr='" + bigImgNumber + "']");
-    oldUnderlineDiv.style.borderBottom = "none";
+    var newUnderlineDiv = document.querySelector("img[nr='" + smallImgNumber + "'][class='inline_images']");
+    newUnderlineDiv.style.outline = "4px solid orange";
+    var oldUnderlineDiv = document.querySelector("img[nr='" + bigImgNumber + "'][class='inline_images']");
+    oldUnderlineDiv.style.outline = "none";
 }
 
 /*******************************************************************/
@@ -66,8 +66,8 @@ function setImg(mainImg, image) {
     mainImgTarget.setAttribute('href', src);
     mainImg.setAttribute('src', src);
     mainImg.setAttribute('nr', smallImgNumber);
-    var newUnderlineDiv = document.querySelector("div[nr='" + smallImgNumber + "']");
-    newUnderlineDiv.style.borderBottom = "1px solid black";
-    var oldUnderlineDiv = document.querySelector("div[nr='" + bigImgNumber + "']");
-    oldUnderlineDiv.style.borderBottom = "none";
+    var newUnderlineDiv = document.querySelector("img[nr='" + smallImgNumber + "'][class='inline_images']");
+    newUnderlineDiv.style.outline = "4px solid orange";
+    var oldUnderlineDiv = document.querySelector("img[nr='" + bigImgNumber + "'][class='inline_images']");
+    oldUnderlineDiv.style.outline = "none";
 }
