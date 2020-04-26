@@ -179,6 +179,10 @@
     #production {
         margin: 0 0;
     }
+    #products article {
+        padding: 15% 5%;
+        width: 100%;
+    }
     #production>article>p.p_high {
         width: 80%;
         margin: 25% 10% 5%;

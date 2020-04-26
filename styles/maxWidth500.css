@@ -233,6 +233,10 @@
     #products {
         flex-direction: column;
     }
+    #products article {
+        padding: 15% 5%;
+        width: 100%;
+    }
     #mainImgTarget {
         pointer-events: none;
     }
