@@ -448,8 +448,21 @@ article.ingredientsSection p {
 }
 
 #products article {
-    padding: 25% 5%;
-    width: 20%;
+    padding: 15% 5%;
+    width: 25%;
+}
+
+#products article p {
+    text-align: center;
+}
+
+#products article p.size_variant {
+    align-items: center;
+    display: flex !important;
+}
+
+#products article p.size_variant img {
+    margin: 5%;
 }
 
 #products button {
