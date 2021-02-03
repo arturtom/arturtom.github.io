@@ -222,6 +222,15 @@ ul#goodness-list li::before {
     font-size: 1.4rem;
 }
 
+#buy_now {
+    position: relative;
+    bottom: 10%;
+    color: #ccad0e;
+    font-size: 2rem;
+    display: table;
+    margin: 0 auto;
+}
+
 #cupOfTea {
     width: 50%;
     height: 600px;
