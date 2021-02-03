@@ -16,6 +16,9 @@
         line-height: 3rem;
         font-size: 1.7rem;
     }
+    #buy_now {
+        bottom: 20%;
+    }
     nav span {
         background-color: black;
         width: 20px;
